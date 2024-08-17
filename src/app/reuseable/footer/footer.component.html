@@ -2,7 +2,7 @@
     <div class="row" >
         <div class="col-lg-2 col-md-6 col-sm-12" *ngFor="let item of Limit">
             <div class="product-box-layout1">
-                <figure class="item-figure"><a href="single-recipe1.html"><img src={{item.image}}
+                <figure class="item-figure"><a routerLink="/recipeDetail/{{item.id}}" ><img src={{item.image}}
                             alt="Product"></a></figure>
                 <div class="item-content">
                 </div>

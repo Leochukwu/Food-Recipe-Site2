@@ -5,10 +5,10 @@
             <ng-container *ngFor="let slide of Recipes">
               <ng-template carouselSlide [id]="slide.id"  >
                 <div class="ranna-slider-content-layout1 owl_cast2">
-                    <figure class="item-figure"><a href="single-recipe1.html"><img src={{slide.image}} alt="Product"></a></figure>
+                    <figure class="item-figure"><a routerLink="/recipeDetail/{{slide.id}}" ><img src={{slide.image}} alt="Product"></a></figure>
                     <div class="item-content">
                         <span class="sub-title">{{slide.tags[0] | uppercase}}</span>
-                        <h2 class="item-title"><a href="single-recipe1.html">{{slide.name}}</a></h2>
+                        <h2 class="item-title"><a routerLink="/recipeDetail/{{slide.id}}" >{{slide.name}}</a></h2>
                         <ul class="item-rating">
                             <li *ngIf="slide.rating>0" class="star-fill"><i class="fas fa-star"></i></li>
                             <li *ngIf="slide.rating>1"  class="star-fill"><i class="fas fa-star"></i></li>
@@ -44,11 +44,11 @@
         <div class="row" >
             <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let item of Sort">
                 <div class="product-box-layout1">
-                    <figure class="item-figure"><a href="single-recipe1.html"><img src={{item.image}}
+                    <figure class="item-figure"><a routerLink="/recipeDetail/{{item.id}}" ><img src={{item.image}}
                                 alt="Product"></a></figure>
                     <div class="item-content">
                         <span class="sub-title">{{item.mealType[0]}}</span>
-                        <h3 class="item-title"><a href="single-recipe1.html">{{item.name}}</a></h3>
+                        <h3 class="item-title"><a routerLink="/recipeDetail/{{item.id}}" >{{item.name}}</a></h3>
                         <ul class="item-rating">
                             <li *ngIf="item.rating>0" class="star-fill"><i class="fas fa-star"></i></li>
                             <li *ngIf="item.rating>1"  class="star-fill"><i class="fas fa-star"></i></li>
