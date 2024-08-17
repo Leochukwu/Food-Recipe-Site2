@@ -1,0 +1,6 @@
+/* Ensure the carousel container takes 80% of the viewport height */
+.owl_cast2 img{
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit:cover;
+}
