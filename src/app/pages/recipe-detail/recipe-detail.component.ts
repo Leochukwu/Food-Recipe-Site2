@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink} from '@angular/router';
 
 @Component({
@@ -10,7 +10,7 @@ import { ActivatedRoute, RouterLink} from '@angular/router';
   templateUrl: './recipe-detail.component.html',
   styleUrl: './recipe-detail.component.scss'
 })
-export class RecipeDetailComponent {
+export class RecipeDetailComponent implements OnInit {
 
   //Variable Declearation 
 
